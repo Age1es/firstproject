@@ -1,0 +1,143 @@
+body {
+	font-family: 'Great Vibes', cursive;
+	font-style: italic;
+}
+
+.running_title {
+	margin-left: -8px;
+	margin-top: -32.16px;
+	width: 1520px;
+	height: 100px;
+	background-color: rgba(0, 0, 0, 0.904);
+	text-align: center;
+	
+	
+}
+
+.page_title {
+	padding-top: 23px;
+	text-align: center;
+	font-size: 48px;
+	font-weight: 100;
+	color: #ffd15d;
+	
+}
+
+.img_logo {
+	margin-top: -1000px;
+	margin-left: -1350px;
+	width: 600px;	
+}
+
+.page_color {
+	margin-left: -8px;
+	width: 1520px;
+	height: 5000px;
+	background-color: rgb(0, 0, 0);
+		
+}
+
+.congratulation_text {
+	padding: 50px;
+	margin: auto;
+	width: 900px;
+	color: #ffd15d;
+	text-align: center;
+	}
+
+.slider-container {
+	margin: auto;
+}
+
+.slider {
+	width: 450px;
+	height: 450px;
+	border: 2px solid #ffd15d;
+	margin: auto;
+	overflow: hidden;
+	   
+}
+
+.slider-line {
+	height: 450px;
+	width: 1520px;
+	display: flex;
+	position: relative;
+	left: 0;
+	animation-name: slider;
+	animation-duration: 1s;
+	
+}
+
+@keyframes slider {
+	0% {
+		 opacity:0;
+	}
+	10% {
+		 opacity:1;
+	}
+	25% {
+		 opacity:1;
+	}
+	50% {
+		 opacity:0;
+	}
+	100% {
+		 opacity:0;
+	}
+}
+
+.left,
+.right {
+	width: 80px;
+	height: 90px;
+	background-color: black;
+	border-radius: 50%;
+	cursor: pointer;
+	position: relative;
+}
+
+.left::before,
+.right::before {
+	content: '';
+	width: 35px;
+	height: 35px;
+	position: absolute;
+}
+
+.left::before {
+	border-top: 2px solid #ffd15d;
+	border-left: 2px solid #ffd15d;
+	transform: rotate(-45deg);
+	top: 24.5px;
+	left: 29px;
+}
+
+.right::before {
+	border-top: 2px solid #ffd15d;
+	border-left: 2px solid #ffd15d;
+	transform: rotate(135deg);
+	top: 24.5px;
+	left: 15px;
+}
+
+.slider-prev {
+	position: absolute;
+	margin-top: -265px;
+	margin-left: 420px;
+	background-color: black;
+	border-radius: 50%;
+	border: #ffd15d solid 2px;
+}
+
+.slider-next {
+	position: absolute;
+	margin-top: -265px;
+	margin-left: 1005px;
+	background-color: black;
+	border: black;
+	border-radius: 50%;
+	border: #ffd15d solid 2px;
+}
+
+
